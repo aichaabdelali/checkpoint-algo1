@@ -1,0 +1,21 @@
+ALGORITHM count_sentence
+VAR
+    sentence : STRING;
+    sentence_length : INTEGER;
+    words_numbers : INTEGER :=0;
+    vowel_count : INTEGER:=0;
+    i := INTEGER;
+BEGIN
+    Read (sentence);
+    sentence := sentence.toLowerCase();
+    FOR i FROM 0 TO sentence_length-1 DO
+        IF (sentence[i] := " "]) THEN
+            words_numbers++
+        END_IF
+        IF (sentence[i]:= "a" or "e" or "i" or "o" or "u" or "y") THEN
+            vowel_count++
+        END_IF
+        sentence_length++
+    END_FOR
+    Write (sentence_length, words_numbers, vowel_count)
+END
